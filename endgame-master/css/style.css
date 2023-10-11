@@ -16,7 +16,7 @@ body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	font-smooth: antialiased;
 }
 
 h1,
@@ -56,7 +56,7 @@ h6 {
 
 p {
 	font-size: 15px;
-	color: #585858;
+	color: #4B4737;
 	line-height: 1.6;
 	font-weight: 500;
 }
@@ -70,6 +70,20 @@ select:focus,
 button:focus,
 textarea:focus {
 	outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+a {
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
 }
 
 a:hover,
@@ -159,7 +173,7 @@ ol {
 	padding: 24px 30px;
 	border-radius: 0;
 	text-transform: uppercase;
-	color: #081624;
+	color: #1D2671;
 	line-height: normal;
 	cursor: pointer;
 	text-align: center;
@@ -183,10 +197,10 @@ ol {
 	height: 100%;
 	left: 9px;
 	top: 10px;
-	background: #b01ba5;
+	background: #C33764;
 	z-index: -2;
-	-webkit-box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
-	box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
+	-webkit-box-shadow: 0 0 9px 3px rgba(195,55,100,1);
+	box-shadow: 0 0 9px 3px rgba(195,55,100,1);
 }
 
 .site-btn:before {
@@ -197,7 +211,7 @@ ol {
 }
 
 .site-btn:hover {
-	color: #081624;
+	color: #1D2671;
 }
 
 /* Preloder */
@@ -318,26 +332,27 @@ ol {
 .header-social a:hover,
 .footer-social a:hover,
 .geme-social-share a:hover {
-	background: #b01ba5;
+	background: #C33764;
 }
 
 .header-bar-warp {
-	background: #081624;
-	padding: 39px 40px 0;
-	-webkit-box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
-	box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
+	background: #222831;
+	-webkit-box-shadow: 0 0 9px 3px rgba(195,55,100,1);
+	box-shadow: 0 0 9px 3px rgba(195,55,100,1);
 }
 
 .site-logo {
 	float: left;
+	width: 10rem;
 }
+
 
 .user-panel {
 	float: right;
 	font-size: 16px;
 	font-weight: 500;
 	color: #fff;
-	padding-top: 3px;
+	line-height: 4rem;
 }
 
 .user-panel a {
@@ -345,13 +360,13 @@ ol {
 }
 
 .user-panel a:hover {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .main-menu {
+	line-height: 4rem;
 	list-style: none;
 	text-align: center;
-	padding-top: 3px;
 }
 
 .main-menu li {
@@ -360,12 +375,10 @@ ol {
 }
 
 .main-menu li a {
-	display: block;
 	font-size: 16px;
 	font-weight: 500;
 	color: #fff;
 	margin-right: 40px;
-	padding-bottom: 28px;
 	position: relative;
 	padding-right: 20px;
 }
@@ -388,7 +401,7 @@ ol {
 }
 
 .main-menu li a:hover {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .main-menu li a:hover:after {
@@ -396,7 +409,7 @@ ol {
 }
 
 .main-menu li a:hover i {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .main-menu li:hover .sub-menu {
@@ -406,7 +419,7 @@ ol {
 }
 
 .main-menu li:hover>a {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .main-menu li:hover>a:after {
@@ -417,10 +430,9 @@ ol {
 	position: absolute;
 	list-style: none;
 	text-align: left;
-	width: 220px;
+	width: max-content;
 	left: 0;
 	top: 100%;
-	padding: 20px 0;
 	visibility: hidden;
 	opacity: 0;
 	margin-top: 50px;
@@ -441,7 +453,7 @@ ol {
 	display: block;
 	color: #000;
 	margin-right: 0;
-	padding: 8px 30px;
+	padding: 0 30px;
 }
 
 .main-menu li .sub-menu li a:after {
@@ -449,7 +461,7 @@ ol {
 }
 
 .main-menu li .sub-menu li a:hover {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .slicknav_menu {
@@ -494,8 +506,8 @@ ol {
 }
 
 .hero-slider .owl-dots .owl-dot.active {
-	color: #b01ba5;
-	border: 2px solid #b01ba5;
+	color: #C33764;
+	border: 2px solid #C33764;
 }
 
 .hero-slider .owl-nav {
@@ -512,7 +524,7 @@ ol {
 .hero-item {
 	height: 921px;
 	padding-top: 125px;
-	border-bottom: 2px solid #b01ba5;
+	border-bottom: 2px solid #FAEFC8;
 }
 
 .hero-item h2 {
@@ -595,7 +607,7 @@ ol {
 }
 
 .text-box .top-meta a {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .text-box h3 {
@@ -627,16 +639,16 @@ ol {
 ---------------------*/
 
 .blog-section {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#501755+0,2d1854+100 */
-	background: #501755;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c062e+0,2d1854+100 */
+	background: #C33764;
 	/* Old browsers */
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #501755 0%, #2d1854 100%);
+	background: -webkit-linear-gradient(45deg, #C33764 0%, #1D2671 100%);
 	/* Chrome10-25,Safari5.1-6 */
-	background: -o-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	background: linear-gradient(45deg, #501755 0%, #2d1854 100%);
+	background: -o-linear-gradient(45deg, #C33764 0%, #1D2671 100%);
+	background: linear-gradient(45deg, #C33764 0%, #1D2671 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#501755', endColorstr='#2d1854', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C33764', endColorstr='#1D2671', GradientType=1);
 	/* IE6-9 fallback on horizontal gradient */
 }
 
@@ -659,7 +671,7 @@ ol {
 	padding: 16px 36px;
 	font-size: 16px;
 	font-weight: 700;
-	background: #6f2b95;
+	background: #C33764;
 	line-height: 1.1;
 	margin-right: 7px;
 	-webkit-transition: all 0.3s;
@@ -669,7 +681,7 @@ ol {
 }
 
 .blog-filter li a:hover {
-	background: #b01ba5;
+	background: #1D2671;
 }
 
 .blog-item {
@@ -729,7 +741,7 @@ ol {
 }
 
 .trending-widget .tw-text .tw-meta a {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .trending-widget .tw-text h5 {
@@ -770,7 +782,7 @@ ol {
 }
 
 .categories-widget ul li a:hover {
-	color: #b01ba5;
+	color: #C33764;
 	background-position: right center;
 }
 
@@ -792,7 +804,7 @@ ol {
 	position: absolute;
 	right: 0;
 	top: 0;
-	color: #b01ba5;
+	color: #C33764;
 	font-weight: 700;
 	font-size: 14px;
 	font-style: italic;
@@ -826,7 +838,7 @@ ol {
 }
 
 .latest-comments .lc-item .tw-text a {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .latest-comments .lc-item .tw-text span {
@@ -886,8 +898,8 @@ ol {
 	top: 0;
 	border-left: 3px solid #de46d6;
 	background: #fff;
-	-webkit-box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.5);
-	box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.5);
+	-webkit-box-shadow: 0 0 9px 3px rgba(195,55,100,1);
+	box-shadow: 0 0 9px 3px rgba(195,55,100,1);
 }
 
 /* ----------------
@@ -1100,16 +1112,16 @@ ol {
 
 .games-section {
 	padding: 108px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#501755+0,2d1854+100 */
-	background: #501755;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c062e+0,2d1854+100 */
+	background: #0c062e;
 	/* Old browsers */
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #501755 0%, #2d1854 100%);
+	background: -webkit-linear-gradient(45deg, #0c062e 0%, #2d1854 100%);
 	/* Chrome10-25,Safari5.1-6 */
-	background: -o-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	background: linear-gradient(45deg, #501755 0%, #2d1854 100%);
+	background: -o-linear-gradient(45deg, #0c062e 0%, #2d1854 100%);
+	background: linear-gradient(45deg, #0c062e 0%, #2d1854 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#501755', endColorstr='#2d1854', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c062e', endColorstr='#2d1854', GradientType=1);
 	/* IE6-9 fallback on horizontal gradient */
 }
 
@@ -1160,7 +1172,7 @@ ol {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-style: italic;
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .game-item .read-more img {
@@ -1200,8 +1212,8 @@ ol {
 .site-pagination a.active {
 	width: 44px;
 	margin: 0 10px;
-	color: #b01ba5;
-	border: 2px solid #b01ba5;
+	color: #C33764;
+	border: 2px solid #C33764;
 }
 
 .site-pagination a.active:first-child {
@@ -1221,16 +1233,16 @@ ol {
 .blog-page,
 .contact-page {
 	padding: 104px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#501755+0,2d1854+100 */
-	background: #501755;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c062e+0,2d1854+100 */
+	background: #0c062e;
 	/* Old browsers */
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #501755 0%, #2d1854 100%);
+	background: -webkit-linear-gradient(45deg, #0c062e 0%, #2d1854 100%);
 	/* Chrome10-25,Safari5.1-6 */
-	background: -o-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	background: linear-gradient(45deg, #501755 0%, #2d1854 100%);
+	background: -o-linear-gradient(45deg, #0c062e 0%, #2d1854 100%);
+	background: linear-gradient(45deg, #0c062e 0%, #2d1854 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#501755', endColorstr='#2d1854', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c062e', endColorstr='#2d1854', GradientType=1);
 	/* IE6-9 fallback on horizontal gradient */
 }
 
@@ -1246,7 +1258,7 @@ ol {
 }
 
 .game-single-content .gs-meta a {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .game-single-content .gs-title {
@@ -1256,7 +1268,7 @@ ol {
 }
 
 .game-single-content h4 {
-	color: #b01ba5;
+	color: #C33764;
 	margin-bottom: 20px;
 }
 
@@ -1282,7 +1294,7 @@ ol {
 .rating-widget ul li {
 	display: block;
 	font-size: 16px;
-	color: #b01ba5;
+	color: #C33764;
 	font-weight: 500;
 	margin-bottom: 10px;
 }
@@ -1310,7 +1322,7 @@ ol {
 }
 
 .rating-widget h5 span {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .testimonials-widget {
@@ -1336,7 +1348,7 @@ ol {
 }
 
 .testimonials-widget .testim-text h6 span {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .game-author-section {
@@ -1364,7 +1376,7 @@ ol {
 }
 
 .game-author-info h4 span {
-	color: #b01ba5;
+	color: #C33764;
 }
 
 .game-author-info p {
@@ -1567,9 +1579,6 @@ ol {
 /* Tablet :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.header-bar-warp {
-		padding: 39px 15px 0;
-	}
 	.main-menu li a {
 		margin-right: 10px;
 	}
@@ -1632,15 +1641,12 @@ ol {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
-	.header-bar-warp {
-		padding: 25px 20px 10px;
-	}
 	.main-menu.primary-menu {
 		display: none;
 	}
 	.slicknav_menu {
 		display: block;
-		background: #081624;
+		background: #1D2671;
 	}
 	.slicknav_btn {
 		margin-right: 10px;
